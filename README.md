@@ -28,3 +28,48 @@ This project was created as part of my learning process in quantitative finance 
 - Performance output chart saved in `/results`  
 
 ## Project Structure
+factor-portfolio-builder/
+│── src/
+│ ├── data_download.py
+│ ├── factor_engine.py
+│ ├── portfolio.py
+│ └── backtest.py
+│── run.py
+│── requirements.txt
+│── README.md
+│── data/ (empty, will store raw data)
+│── results/ (stores performance chart)
+
+## How to Run the Project
+
+### 1. Install dependencies
+Run the following command:
+pip install -r requirements.txt
+
+### 2. Run the backtest
+python run.py
+
+The script will:
+- download data  
+- calculate factor signals  
+- build a portfolio  
+- run the backtest  
+- save a performance chart to `/results/performance.png`  
+
+## Example Output
+The backtest will generate a performance chart that illustrates how the factor portfolio would have performed over time.
+
+## Skills Demonstrated
+- Python programming  
+- Financial data analysis  
+- Factor modelling  
+- Backtesting frameworks  
+- Portfolio construction  
+- Use of `pandas`, `numpy`, and `matplotlib`  
+
+## Future Improvements
+- Add transaction costs  
+- Add long/short portfolios  
+- Add more factor definitions  
+- Improve weighting methodology  
+- Expand visualisation suite  
